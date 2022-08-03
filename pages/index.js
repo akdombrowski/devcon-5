@@ -43,9 +43,9 @@ export default function Index({}) {
             className={`sm:w-3/4 p-10 md:mx-auto shadow-md- bg-gray-50- dark:bg-black light`}
           >
             {/*<button
-              className="inline-flex items-center px-6 py-3 border 
+              className="inline-flex items-center px-6 py-3 border
               border-transparent text-base font-medium rounded-md shadow-sm
-                text-white bg-indigo-600 hover:bg-indigo-700 
+                text-white bg-indigo-600 hover:bg-indigo-700
                 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               onClick={(e)=> onClick( mode === 'dark' ? 'light' : 'dark'  ) }>
               {mode === 'dark' ? 'light mode' : 'dark mode'}
