@@ -13,8 +13,8 @@ import { contentDemo as htmlContent } from "../packages/dante3/src/data/content"
 import { version, name } from "../packages/dante3/package.json";
 
 export default function Index({}) {
-  const [theme, setTheme] = useState(defaultTheme);
-  const [mode, setMode] = useState("light");
+  const [theme, setTheme] = useState(darkTheme);
+  const [mode, setMode] = useState("dark");
   const [fixed, setFixed] = useState(false);
 
   function onClick(m) {
@@ -37,7 +37,7 @@ export default function Index({}) {
       mode={mode}
       setMode={setMode}
     >
-      <div className={`sm:mx-10 mx-2 py-8 ${mode}`} heme={theme}>
+      <div className={`sm:mx-10 mx-2 py-8 ${mode}`} theme={theme}>
         <div>
           <div
             className={`sm:w-3/4 p-10 md:mx-auto shadow-md- bg-gray-50- dark:bg-black light`}
